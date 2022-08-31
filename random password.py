@@ -11,5 +11,5 @@ for k in range(0, 10):
         password_chars = random.choice(chars)
         password = password + password_chars
 
-with open('myPasswords.txt', 'a') as fileM:
+with open(f'{purp}_password.txt', 'a') as fileM:
     fileM.write(f"{purp}: {password}\n")
